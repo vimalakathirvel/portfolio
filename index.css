@@ -1,0 +1,353 @@
+/* Header and Nav Styles */
+body{
+    background-color: black;
+    color: white;
+}
+.nav-logo{
+    color: white;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* Adjusting alignment of the nav menu to the end */
+.nav-logo {
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: auto; /* This pushes the menu to the right end */
+    
+}
+
+.navlist {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Additional styling for nav links */
+.navlink {
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.navlink:hover {
+    color: #ffeb3b;
+}
+
+/* Toggle Icon for Mobile */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        transition: right 0.5s;
+    }
+
+    .nav-menu_visible {
+        right: 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        color: white;
+    }
+
+    .navlist {
+        flex-direction: column;
+    }
+}
+#home{
+    padding-top: 50px 20px;
+}
+.social a{
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color:black; 
+    width: 100px;
+    border: 100px;
+}
+.social a:hover{
+    color: aqua;
+
+}
+.button {
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: aqua; 
+    transition:box-shadow 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(to right, purple, orange); /* New gradient on hover */
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    background: linear-gradient(to right, darkblue, darkred); /* Color on click */
+}
+.section-title{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2px;
+}
+.services {
+    padding: 50px 0;
+    background: black;
+  }
+
+  .services .heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .services .heading span {
+    color: #6c63ff;
+  }
+
+  .services-box {
+    background:black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .services-box:hover {
+    transform: translateY(-10px);
+  }
+
+  .services-box i {
+    font-size: 3rem;
+    color: #6c63ff;
+    margin-bottom: 15px;
+  }
+
+  .services-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .services-box p {
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  .services-box .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c63ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .services-box .btn:hover {
+    background-color: #5547cc;
+  }
+  .education {
+    padding: 50px 0;
+    background-color: black;
+  }
+
+  .education .heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .education .heading span {
+    color: #6c63ff;
+  }
+
+  .education-column {
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .education-box {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .education-box:hover {
+    background-color: black;
+    transition: background-color 0.3s;
+  }
+
+  .year {
+    color: #6c63ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .education-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .education-content p {
+    color: #777;
+  }
+
+  .education-box i {
+    color: #6c63ff;
+    margin-right: 5px;
+  }
+
+  .toggle-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #6c63ff;
+  }
+  .skills {
+    padding: 50px 0;
+    background-color: black;
+  }
+
+  .skills .heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .skills-column {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+
+  .skills-box .progress {
+    margin-bottom: 20px;
+  }
+
+  .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .progress .bar {
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .progress .bar span {
+    display: block;
+    height: 10px;
+    background: #6c63ff;
+    transition: width 0.4s ease;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 50px 0;
+    background: black;
+  }
+
+  .contact .heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .input-field {
+    flex: 1;
+    position: relative;
+  }
+
+  .input-field input, .textarea-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+
+  .textarea-field textarea {
+    resize: none;
+  }
+
+  .btn-box .btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #5048bf;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .skills-column {
+      max-width: 100%;
+    }
+
+    .input-box {
+      flex-direction: column;
+    }
+  }
